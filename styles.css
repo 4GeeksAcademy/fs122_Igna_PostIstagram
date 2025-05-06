@@ -1,25 +1,33 @@
-* {
-	border: 1px dashed red;
-	min-height: 7px;
-}
-
 
 .post-header{
     display: flex;
-    width: 80%;
+    width: 100%;
     border: bottom;
     border-color: grey;
+    flex-direction: row;
 }
 
 .header-left{
     margin-left: 20px;
-    flex-grow: 1;
+    align-self: left;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    
 }
-.middle{
+.header-left i{
+    align-self: center;  
+}
+.header-right{
+    margin-right: 20px;
+    align-self: right;
+    display: flex;
+    flex-direction: row-reverse;
     flex-grow: 3;
 }
+.header-right i{
+    align-self: center;
+}
+
 
 img{
     width: 100%;
@@ -37,6 +45,28 @@ img{
     margin: 10px;
     padding: 10px;
     
+}
+.post-icons{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.post-iconsR{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 200px;
+    margin-right: 10px;
+}
+.post-iconsL{
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    flex-grow: 2;
+    margin-left: 10px;
+}
+.post-icons i{
+    margin: 5px;
+    padding: 5px;
 }
 .post {
     background-color: white;
